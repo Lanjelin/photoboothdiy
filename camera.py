@@ -369,7 +369,8 @@ def TakePictures():
                 # get a list of printers
                 printers = conn.getPrinters()
                 # select printer 0
-                printer_name = printers.keys()[0]
+                #printer_name = printers.keys()[0]
+		printer_name = list(printers.keys())[0]
                 Message = "Printing in progress..."
                 UpdateDisplay()
                 time.sleep(1)
